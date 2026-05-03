@@ -28,26 +28,26 @@
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><a class="nav-link book-now" href="#booking">BOOK NOW</a></li>
+        <li class="nav-item"><a class="nav-link book-now" href="#book-me">BOOK NOW</a></li>
       </ul>
     </div>
   </div>
 </nav>
-    
+   
   <!--  HEAD  SECTION -->
  <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="head"> 
     <div class="col-10 col-sm-8 col-lg-6"> 
     </div> 
     <div class="col-lg-6">
-          <p class="lead">PROFESSIONAL MAKEUP ARTIST</p>
+      <p class="lead">PROFESSIONAL MAKEUP ARTIST</p>
          <h1 class="display-5 fw-bold  lh-1 mb-3" id="first">Enhancing </h1> 
          <h1 class="display-5 fw-bold  lh-1 mb-3" id="second">Your Beauty</h1>
          <p class="lead" id="third">For wedding, events, photoshoots</p>
          <p class="lead" id="forth"> and every special moment.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-             <button type="button" class="btn btn-glam btn-lg px-4 me-md-2">BOOK YOUR APPOINTMENT</button> 
+             <a href="#book-me"><button type="button" class="btn btn-glam btn-lg px-4 me-md-2" hr>BOOK YOUR APPOINTMENT</button>  </a>
              </div> 
-            </div> 
+            </div>
 </div> 
     
 <section class="about-section py-5" id="about">
@@ -178,7 +178,57 @@
 </div>
 
 
+ <!--  BOOKING  SECTION -->
 
+<section class="py-5  booking " id="book-me">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <h2 class="mb-4">Book an Appointment</h2>
+        <form id="booking-form">
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <select class="form-select" name="service" required>
+                <option value="" disabled selected>Service Type</option>
+                <option value="Bridal Makeup">Bridal Makeup</option>
+                <option value="Casual Glam">Casual Glam</option>
+                <option value="Photoshoot Makeup">Photoshoot Makeup</option>
+                <option value="Gele Tying">Gele Tying</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="date" class="form-control" name="date" required>
+            </div>
+          </div>
+          <div class="mb-4">
+            <textarea class="form-control" name="message" placeholder="Message (Optional)" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            SUBMIT BOOKING
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <div class="border p-4 rounded h-100">
+          <h3 class="h4 mb-3 order-text1">Or book via WhatsApp</h3>
+          <p class="text-secondary mb-4 order-text2">Click the button below to chat with me and book your appointment instantly.</p>
+            <a class="btn btn-whatsapp">BOOK VIA WHATSAPP </a>
+            
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!--  FOOTER  SECTION -->
 
@@ -207,5 +257,4 @@
      <script src="index.js" ></script>
 </body>
 </html>
-
 
